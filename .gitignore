@@ -22,3 +22,23 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+# =========================
+# Terraform (IMPORTANT)
+# =========================
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+.crash.log
+
+# =========================
+# Backend / Python
+# =========================
+__pycache__/
+*.pyc
+.env
+
+# =========================
+# OS
+# =========================
+Thumbs.db
