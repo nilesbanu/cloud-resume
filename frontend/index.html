@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Your Name - Resume</title>
+</head>
+<body>
+  <h1>Your Name</h1>
+  <p>Cloud Engineer | DevOps | AWS</p>
+
+  <h3>Visitor Count: <span id="count"></span></h3>
+
+  <script>
+    async function loadCounter() {
+      const res = await fetch("YOUR_API_GATEWAY_URL", { method: "GET" });
+      const data = await res.json();
+      document.getElementById("count").innerText = data.count;
+    }
+    loadCounter();
+  </script>
+</body>
+</html>
